@@ -12,7 +12,6 @@ res=str1+" "+str2
 print(res)
 
 # 2.3
-
 num1=10
 str3="hi"
 

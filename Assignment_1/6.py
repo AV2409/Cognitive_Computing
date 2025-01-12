@@ -1,4 +1,4 @@
-# 6.1 Count the number of vowels in a string
+# 6.1 
 str1="This is a TEST STRING"
 vowels = "aeiouAEIOU"
 count = 0
@@ -8,12 +8,12 @@ for char in str1:
 
 print(count) 
 
-# 6.2 Reverse a string and print it
+# 6.2 
 str2="abcd"
 rev_str=str2[::-1]
 print(rev_str)
 
-# 6.3 Check if a string is a palindrome
+# 6.3 
 str3="abcdcba"
 rev_s=str3[::-1]
 if str3==rev_s:

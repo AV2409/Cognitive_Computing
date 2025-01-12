@@ -9,7 +9,6 @@ while n <= 10:
     n += 1
 
 # 4.3 
-
 sum=0
 for i in range(1,101):
     sum += i
