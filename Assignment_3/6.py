@@ -38,16 +38,16 @@ print("\nEmployees sorted by Salary:\n", sorted_employees)
 
 # 6-g
 
-employees['Performance'] = ''
-
-for i in range(len(employees)):
-    if employees.loc[i, 'Rating'] >= 4.5:
-        employees.loc[i, 'Performance'] = 'Excellent'
-    elif employees.loc[i, 'Rating'] >= 4.0:
-        employees.loc[i, 'Performance'] = 'Good'
+def performance_rating(rating):
+    if rating >= 4.5:
+        return 'Excellent'
+    elif 4.0 <= rating < 4.5:
+        return 'Good'
     else:
-        employees.loc[i, 'Performance'] = 'Average'
+        return 'Average'
+    
 
+employees['Performance'] = employees['Rating'].apply(performance_rating)
 print(employees)
 
 
